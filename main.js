@@ -1,16 +1,18 @@
-// your javascript file
-const container = document.querySelector('#container');
 
-const content = document.createElement('div');
-content.classList.add('content');
-content.textContent = "hey, I'm red";
+   const gridcontainer =document.querySelector("#grid-container");
+   let grid = 10;
 
-container.appendChild(content);
+for (let index = 0; index < grid; index++) {
 
-const container = document.querySelector('#container');
+const singlecell = document.createElement("div");
+singlecell.textContent = ".";
+singlecell.style.color = "black";
+singlecell.classList.add("bg-red");
+singlecell.addEventListener(
+    "mouseover", () => {
+        singlecell.classList.add("bg-blue");
+    }
+);
+gridcontainer.appendChild(singlecell);
 
-const content = document.createElement('h3');
-content.classList.add('content2');
-content.textContent = "hey, I'm blue";
-
-container.appendChild(content2);
+}
