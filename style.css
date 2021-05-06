@@ -1,6 +1,14 @@
 .bg-red{
-    background-color: crimson;
+    background-color:  rgb(160, 160, 160);
+    color: rgb(160, 160, 160);
+    display: inline-grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1.25, 1fr);
+    margin: .5px;
+    border: 1px solid black;
 }
+
 .bg-blue{
     background-color: blue;
+    color: blue;
 }
