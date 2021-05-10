@@ -1,6 +1,6 @@
 
    const gridcontainer =document.querySelector("#grid-container");
-   let grid = 20;
+   let grid = 23;
  
 
    for (let index2 = 0; index2 < grid; index2++) {
